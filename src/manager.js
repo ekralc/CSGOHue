@@ -13,10 +13,7 @@ class GameManager extends EventEmitter {
 
     server.on('gameData', function (data) {
       data = JSON.parse(data)
-      //console.log(data)
-      //console.log('\n')
       self.lastRequestTime = data.provider.timestamp
-
 
       if (data !== self.lastData) {
         if (data.round) {
