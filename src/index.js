@@ -2,11 +2,13 @@ const Server = require('./server')
 const Manager = require('./manager')
 const HueController = require('./hue')
 
+const config = require('./config')
+
 const server = new Server(3000)
 
 const manager = new Manager(server)
 
-const hue = new HueController('192.168.1.2', 'PcQr46fHZI6NjGqgHK5QAghnFUNm35wsmGCqhGSG')
+const hue = new HueController(config.hue.ip, config.hue.username)
 
 manager.on('bomb', function (status) {
   switch (status) {
