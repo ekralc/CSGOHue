@@ -1,6 +1,8 @@
 const http = require('http')
 const EventEmitter = require('events')
 
+const IP = process.env.LOCAL_IP || 'localhost'
+
 class Server extends EventEmitter {
 
   constructor (port) {
@@ -23,7 +25,7 @@ class Server extends EventEmitter {
       }
     })
 
-    server.listen(this.port, '192.168.1.20')
+    server.listen(this.port, IP)
   }
 }
 
