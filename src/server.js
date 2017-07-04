@@ -23,7 +23,7 @@ class Server extends EventEmitter {
       }
     })
 
-    server.listen(this.port, '127.0.0.1')
+    server.listen(this.port, 'localhost')
   }
 }
 
