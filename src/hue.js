@@ -3,8 +3,6 @@ const config = require('./config')
 
 const HueApi = hue.HueApi
 
-const GROUP_ID = 1
-
 class HueController {
   constructor (ip, username) {
     this.host = ip
@@ -16,14 +14,14 @@ class HueController {
 
   _setColour (x, y) {
     const state = hue.lightState.create().on().xy(x, y)
-    this.api.setGroupLightState(GROUP_ID, state, function (err, result) {
+    this.api.setGroupLightState(config.hue.GROUP_ID, state, function (err, result) {
       if (err) console.log(err)
     })
   }
 
   setWhite () {
     const state = hue.lightState.create().on().white(154, 70)
-    this.api.setGroupLightState(GROUP_ID, state, function (err, result) {
+    this.api.setGroupLightState(config.hue.GROUP_ID, state, function (err, result) {
       if (err) console.log(err)
     })
   }

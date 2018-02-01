@@ -8,6 +8,7 @@ module.exports = {
   },
   hue: {
     ip: '192.168.1.2',
-    username: 'PcQr46fHZI6NjGqgHK5QAghnFUNm35wsmGCqhGSG'
+    username: 'PcQr46fHZI6NjGqgHK5QAghnFUNm35wsmGCqhGSG',
+    GROUP_ID: 1
   }
 }
