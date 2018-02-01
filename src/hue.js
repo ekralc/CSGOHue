@@ -27,23 +27,23 @@ class HueController {
   }
 
   setRed () {
-    this._setColour(config.colour.red[0], config.colour.red[1])
+    this._setColour(config.colour.red)
   }
 
   setGreen () {
-    this._setColour(config.colour.green[0], config.colour.green[1])
+    this._setColour(config.colour.green)
   }
 
   setNeutral () {
-    this._setColour(config.colour.neutral[0], config.colour.neutral[1])
+    this._setColour(config.colour.neutral)
   }
 
   setCT () {
-    this._setColour(config.colour.ct[0], config.colour.ct[1])
+    this._setColour(config.colour.ct)
   }
 
   setT () {
-    this._setColour(config.colour.t[0], config.colour.t[1])
+    this._setColour(config.colour.t)
   }
 }
 
