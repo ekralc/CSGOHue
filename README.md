@@ -1,1 +1,2 @@
 # CSGOHue
+init bruv
