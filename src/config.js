@@ -7,8 +7,8 @@ module.exports = {
     t: [0.5415, 0.421]
   },
   hue: {
-    ip: '192.168.1.2',
-    username: 'PcQr46fHZI6NjGqgHK5QAghnFUNm35wsmGCqhGSG',
+    ip: 'YOUR_IP_HERE',
+    username: 'YOUR_USERNAME_HERE',
     GROUP_ID: 1
   }
 }
