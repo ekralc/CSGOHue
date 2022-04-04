@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js"
   },
-  "author": "James C <jamesc2400@gmail.com> (https://github.com/Jam2400)",
-  "license": "ISC",
+  "author": "ekralc <jamesc2400@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "node-hue-api": "^2.4.2"
   }
